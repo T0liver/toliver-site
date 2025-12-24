@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #16223F;
+  --foreground: #F8FAFC;
+  
+  /* Custom Colors */
+  --color-primary: #16223F;
+  --color-glass-base: #1d2d54;
+  --color-glass-border: #38BDF8;
+  --color-highlight: #FACC15;
+  --color-secondary: #38BDF8;
+  --color-text-main: #F8FAFC;
+  --color-text-muted: #94A3B8;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-primary: var(--color-primary);
+  --color-glass-base: var(--color-glass-base);
+  --color-glass-border: var(--color-glass-border);
+  --color-highlight: var(--color-highlight);
+  --color-secondary: var(--color-secondary);
+  --color-text-main: var(--color-text-main);
+  --color-text-muted: var(--color-text-muted);
+
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/* Glassmorphism Utility */
+.glass-card {
+  background: rgba(29, 45, 84, 0.5);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-text-main);
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
